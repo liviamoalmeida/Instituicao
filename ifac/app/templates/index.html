@@ -78,28 +78,31 @@
         </div>
     </div>
 
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a tabindex="0" href="https://estacio.br/" class="navbar-logo">
+                <img src="{{ url_for('static', filename='img/logoifac.png') }}" alt="IFAC Logo" loading="lazy"
+                    class="logo-img">
+            </a>
 
-<nav class="navbar">
-    <div class="navbar-container">
-        <a tabindex="0" href="https://estacio.br/" class="navbar-logo">
-            <img src="{{ url_for('static', filename='img/logoifac.png') }}" 
-                 alt="IFAC Logo" loading="lazy" class="logo-img">
-        </a>
-
-        <div class="navbar-links">
-            <a href="https://ifac.br" class="navbar-link">IFAC</a>
-            <a href="https://estacio.br/processo-seletivo" class="navbar-link">Processo Seletivo</a>
-            <a href="https://estacio.br/cursos" class="navbar-link">Cursos</a>
-            <a href="https://estacio.br/campi" class="navbar-link">Campi</a>
-            <a href="https://estacio.br/estudante" class="navbar-link">Estudante</a>
-            <a href="https://estacio.br/canais-atendimento" class="navbar-link">Canais de Atendimento</a>
-            <a href="https://estacio.br/repositorio" class="navbar-link">Repositório Institucional</a>
+            <div class="navbar-links">
+                <a href="https://ifac.br" class="navbar-link">IFAC</a>
+                <a href="https://estacio.br/processo-seletivo" class="navbar-link">Processo Seletivo</a>
+                <a href="https://estacio.br/cursos" class="navbar-link">Cursos</a>
+                <a href="https://estacio.br/campi" class="navbar-link">Campi</a>
+                <a href="https://estacio.br/estudante" class="navbar-link">Estudante</a>
+                <a href="https://estacio.br/canais-atendimento" class="navbar-link">Canais de Atendimento</a>
+                <a href="https://estacio.br/repositorio" class="navbar-link">Repositório Institucional</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
+    <section class="banner-section">
+        <img src="{{ url_for('static', filename='img/banner.png') }}" alt="Banner do IFAC" class="banner-img">
+    </section>
 
 
-    
+
 
 </body>
 

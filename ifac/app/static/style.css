@@ -135,3 +135,16 @@ body {
 .navbar-link:hover {
     color: #12a31e; /* Cor de destaque no hover */
 }
+/* Estilo para o banner */
+.banner-section {
+    width: 100%;
+    margin-top: 0; /* Remove qualquer margem acima para grudar no menu */
+    padding: 0;
+    overflow: hidden; /* Para evitar que algo ultrapasse os limites do banner */
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block; /* Para evitar margens extras que podem aparecer na imagem */
+}
