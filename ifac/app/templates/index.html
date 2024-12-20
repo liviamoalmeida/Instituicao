@@ -21,6 +21,7 @@
 
     <!-- Link para o Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -80,19 +81,20 @@
 
     <nav class="navbar">
         <div class="navbar-container">
-            <a tabindex="0" href="https://estacio.br/" class="navbar-logo">
+            <a tabindex="0" href="" class="navbar-logo">
                 <img src="{{ url_for('static', filename='img/logoifac.png') }}" alt="IFAC Logo" loading="lazy"
                     class="logo-img">
             </a>
 
             <div class="navbar-links">
-                <a href="https://ifac.br" class="navbar-link">IFAC</a>
-                <a href="https://estacio.br/processo-seletivo" class="navbar-link">Processo Seletivo</a>
-                <a href="https://estacio.br/cursos" class="navbar-link">Cursos</a>
-                <a href="https://estacio.br/campi" class="navbar-link">Campi</a>
-                <a href="https://estacio.br/estudante" class="navbar-link">Estudante</a>
-                <a href="https://estacio.br/canais-atendimento" class="navbar-link">Canais de Atendimento</a>
-                <a href="https://estacio.br/repositorio" class="navbar-link">Repositório Institucional</a>
+                <a href="https://www.ifac.edu.br/transparencia-e-prestacao-de-contas/institucional"
+                    class="navbar-link">IFAC</a>
+                <a href="https://www.ifac.edu.br/processos-seletivos/" class="navbar-link">Processo Seletivo</a>
+                <a href="https://www.ifac.edu.br/o-ifac/ensino/cursos/tipos-de-cursos" class="navbar-link">Cursos</a>
+                <a href="https://www.ifac.edu.br/campi" class="navbar-link">Campi</a>
+                <a href="https://www.ifac.edu.br/estudante" class="navbar-link">Estudante</a>
+                <a href="https://www.ifac.edu.br/contato" class="navbar-link">Canais de Atendimento</a>
+                <a href="https://repositorio.ifac.edu.br/jspui/" class="navbar-link">Repositório</a>
             </div>
         </div>
     </nav>
@@ -100,8 +102,37 @@
     <section class="banner-section">
         <img src="{{ url_for('static', filename='img/banner.png') }}" alt="Banner do IFAC" class="banner-img">
     </section>
-
-
+    <section class="section-container">
+        <div class="container">
+            <div class="grid-row top-content">
+                <div>
+                    <h2 class="title">Explore nosso sistema</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid-row bottom-content">
+                <div class="carousel-wrapper">
+                    <div class="course-card">
+                        <h3>Processo Seletivo</h3>
+                        <p>Descrição</p>
+                        <button class="button">Saiba Mais</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>PROFEPT</h3>
+                        <p>Descrição</p>
+                        <button class="button">Saiba Mais</button>
+                    </div>
+                    <div class="course-card">
+                        <h3>Concurso Público</h3>
+                        <p>Descrição</p>
+                        <button class="button">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
 
 </body>
