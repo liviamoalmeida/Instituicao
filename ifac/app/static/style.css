@@ -145,15 +145,6 @@ body {
     display: block;
 }
 
-.section-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: rgb(20, 75, 200);
-}
-
 .container {
     width: 100%;
     margin: 0 auto;
@@ -162,7 +153,6 @@ body {
     max-width: 1280px !important;
 }
 
-.container .top-content,
 .container .bottom-content {
     display: flex;
     flex-direction: column;
@@ -177,16 +167,6 @@ body {
     width: 100%;
 }
 
-.title {
-    margin: 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 120%;
-    color: rgb(255, 255, 255);
-}
-
 .button {
     display: inline-flex;
     align-items: center;
@@ -194,9 +174,9 @@ body {
     width: 100%;
     height: 48px;
     margin: 0;
-    border: 2px solid rgb(199, 9, 9);
+    border: 2px solid #37A45A;
     border-radius: 8px;
-    background-color: rgb(199, 9, 9);
+    background-color: #37A45A;
     color: rgb(255, 255, 255);
     font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
@@ -208,7 +188,8 @@ body {
 }
 
 .button:hover {
-    background-color: rgb(199, 9, 9);
+    background-color: #b10808;
+    border: 2px solid #b10808;
 }
 
 
@@ -218,7 +199,7 @@ body {
     width: 100%;
     height: 100%;
     transition-property: transform;
-    gap: 16px; /* Margem entre os cards */
+    gap: 16px; 
 }
 
 .course-card {
@@ -230,7 +211,9 @@ body {
     border-radius: 8px;
     padding: 24px 16px;
     margin-top: 32px;
+    margin-bottom: 32px;
     box-sizing: border-box;
+    border: 0.1rem solid #E7E7E7
 }
 
 .section-container {
@@ -238,7 +221,22 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 48px auto; /* Margem entre esta seção e a anterior */
-    background-color: #12a31e;
-    height: 300px;
+    margin: 48px auto; 
+    height: max-content;
+}
+.course-card i {
+    font-size: 2rem;
+    color: #37A45A;
+    margin-bottom: 16px;
+}
+
+.course-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.course-card p {
+    font-size: 1rem;
+    margin-bottom: 16px;
 }
