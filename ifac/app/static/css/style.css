@@ -1,14 +1,4 @@
-.header-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121212;
-    height: 3rem;
-    padding: 0;
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-    flex-direction: row;
-}
+/* Global */
 
 * {
     margin: 0;
@@ -31,6 +21,20 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Cabeçalho */
+
+.header-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: row;
+}
+
 .header-item {
     margin-right: 2rem;
 }
@@ -38,6 +42,7 @@ body {
 p.header-text {
     font-weight: 700;
 }
+
 .header-link:not(.pic-gov)::before {
     content: "";
     display: inline-block;
@@ -47,7 +52,6 @@ p.header-text {
     background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2211%22%20height%3D%2210%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M10.174.169l-.003%204.002L6.173.173z%22%2F%3E%3Cpath%20d%3D%22M4%204.51L7.91.6l1.768%201.768-3.91%203.91zM0%200h3.5v2.5H0z%22%2F%3E%3Cpath%20d%3D%22M0%202h2.5v5H0zM7.5%206H10v3H7.5z%22%2F%3E%3Cpath%20d%3D%22M0%207h10v2.5H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
     opacity: 1;
     transition: all 0.1s ease-in-out;
-
 }
 
 .header-link {
@@ -59,7 +63,6 @@ p.header-text {
     align-items: center;
 }
 
-
 .pic-gov {
     background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2250%22%20height%3D%2219%22%20version%3D%221.1%22%20viewBox%3D%220%200%2019%2050%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20transform%3D%22matrix%28.23%200%200%20.23%20-153%20-147%29%22%3E%3Cg%20transform%3D%22matrix%281.3%200%200%201.3%20-200%20-209%29%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m576%20765c0%2034-17%2046-50%2046-14%200-25-2.9-32-5.3l1.4-23c8.8%204.3%2016%206.9%2028%206.9%2017%200%2026-7.9%2026-24v-4.5h-.32c-6.9%209.8-17%2014-28%2014-23%200-37-17-37-42%200-25%2012-44%2038-44%2012%200%2022%206.8%2028%2017h.32v-15h26v74m-46-12c10%200%2018-8.7%2018-22%200-9.3-5.5-20-18-20-11%200-16%209.5-16%2021%200%2013%207.7%2020%2016%2020z%22%2F%3E%3Cpath%20d%3D%22m662%20686h28l22%2062%2022-62h28l-35%2089h-31l-34-89%22%2F%3E%3Cpath%20d%3D%22m576%20732c0-28%2021-44%2049-44s49%2016%2049%2044c0%2028-21%2044-49%2044-28%200-49-16-49-44m68%200c0-13-5.5-24-19-24s-19%2011-19%2024c0%2012%205.5%2024%2019%2024s19-11%2019-24z%22%2F%3E%3Cpath%20d%3D%22m760%20762c0%207.6-6.2%2014-14%2014-7.6%200-14-6.2-14-14%200-7.6%206.2-14%2014-14%207.6%200%2014%206.2%2014%2014z%22%2F%3E%3Cpath%20d%3D%22m762%20654h29v48h.32c7.4-9.3%2017-13%2029-13%2023%200%2036%2022%2036%2042%200%2025-13%2045-38%2045-13%200-25-7.6-29-17h-.32v15h-27v-121m47%2057c-11%200-18%209.3-18%2022%200%2012%208%2021%2018%2021%2011%200%2018-9.2%2018-22%200-11-6.3-21-18-21z%22%2F%3E%3Cpath%20d%3D%22m916%20714c-3.2-.97-6.4-.97-9.8-.97-14%200-21%209.8-21%2026v35h-29v-84h26v15h.32c5-11%2012-17%2025-17%203.4%200%206.9.48%209.8.96l-1.4%2024z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
     display: block;
@@ -70,7 +73,6 @@ p.header-text {
     font-size: 0;
     color: transparent;
 }
-
 
 .header-content {
     display: flex;
@@ -100,6 +102,8 @@ p.header-text {
     margin: 0;
     letter-spacing: 0.00938em;
 }
+
+/* Navbar */
 
 .navbar {
     background-color: #fff;
@@ -140,6 +144,8 @@ p.header-text {
     color: #12a31e;
 }
 
+/* Banner */
+
 .banner-section {
     width: 100%;
     margin-top: 0;
@@ -152,6 +158,8 @@ p.header-text {
     height: auto;
     display: block;
 }
+
+/* Container */
 
 .container {
     width: 100%;
@@ -168,12 +176,7 @@ p.header-text {
     justify-content: center;
 }
 
-.grid-row,
-.grid-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
+/* Cards */
 
 .button {
     display: inline-flex;
@@ -200,7 +203,6 @@ p.header-text {
     border: 2px solid #b10808;
 }
 
-
 .carousel-wrapper {
     display: flex;
     position: relative;
@@ -221,16 +223,7 @@ p.header-text {
     margin-top: 32px;
     margin-bottom: 32px;
     box-sizing: border-box;
-    border: 0.1rem solid #E7E7E7
-}
-
-.section-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 48px auto;
-    height: max-content;
+    border: 0.1rem solid #E7E7E7;
 }
 
 .course-card i {
@@ -250,58 +243,124 @@ p.header-text {
     margin-bottom: 16px;
 }
 
-h3{
-    font-family:'Raleway', sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
+/* Vídeo */
+.video-section {
+    display: flex;
+    justify-content: center;
+    /* Alinha o conteúdo no centro da tela */
+    align-items: center;
+    padding: 56px 40px;
+    position: relative;
+    flex-direction: column;
 }
-/* Rodapé Principal */
+
+.video-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.video-text {
+    text-align: center;
+    max-width: 400px;
+}
+
+.video-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+.video-main iframe,
+.video-thumbnail iframe {
+    border-radius: 8px;
+}
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.video-thumbnail iframe {
+    width: 320px;
+    height: 180px;
+}
+
+.background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: #37A45A;
+    z-index: -1;
+    border-radius: 170px 0px 0px 170px;
+}
+
+
+/* Rodapé */
+
 #portal-footer {
     clear: both;
     color: #222;
     background-color: #f1f1f1;
-    padding: 60px 20px; /* Padding em todos os lados */
+    padding: 60px 20px;
     margin-bottom: 0;
     font-size: 75%;
 }
 
-/* Definindo as colunas no rodapé */
 #portal-footer .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/* Estilo das colunas do rodapé */
-#portal-footer .footer-column {
-    width: 100%;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 30px;
+#portal-footer .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: space-between;
 }
 
-/* Título das colunas */
+#portal-footer .footer-column {
+    width: 18%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
 #portal-footer .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
 }
-/* Redes sociais */
-#portal-footer .social-links {
+
+#portal-footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+#portal-footer .social-column {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
 }
 
-#portal-footer .social-links li {
-    display: inline-block;
-}
-
+#portal-footer .social-links,
 #portal-footer .portal-redes {
     display: flex;
-    gap: 15px;
-    list-style-type: none;
+    gap: 20px;
 }
 
 #portal-footer .portal-redes a {
@@ -314,7 +373,6 @@ h3{
     color: #37A45A;
 }
 
-/* Estilizando os links principais no rodapé */
 #portal-footer a {
     color: #222;
     font-size: 1rem;
@@ -325,7 +383,6 @@ h3{
     color: #37A45A;
 }
 
-/* Menu do rodapé */
 #portal-footer .footer-menu {
     display: flex;
     flex-wrap: wrap;
@@ -344,8 +401,14 @@ h3{
     border-right: none;
 }
 
+#portal-footer .address-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
 
-/* Estilo das colunas de conteúdo do rodapé (endereço, menu, etc.) */
 #portal-footer .address-column p {
     font-size: 1.3em;
     margin: 0;
@@ -373,9 +436,8 @@ h3{
     background-color: #f1f1f1;
 }
 
-/* Rodapé Brasil (logotipos) */
 #footer-brasil {
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     width: 100%;
 }
 
@@ -403,12 +465,28 @@ h3{
     background-position: bottom right;
 }
 
-/* Ajustes de exibição para redes sociais */
-#footer-brasil .social-links {
-    display: flex;
-    gap: 20px;
+#portal-footer .footer-column {
+    flex: 1 1 16%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px #000;
+    border-right-style: solid;
 }
 
-#footer-brasil .social-links li {
-    display: inline-block;
+#linha {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+#portal-footer .address-column {
+    border-right: none;
+}
+
+#portal-footer .social-column {
+    border-right: none;
 }
