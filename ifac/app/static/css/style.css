@@ -17,6 +17,11 @@ p {
     font-weight: normal;
 }
 
+a.text-success:hover {
+    color: #b10808!important;
+}
+
+
 body {
     -webkit-font-smoothing: antialiased;
 }
@@ -104,7 +109,7 @@ p.header-text {
 }
 
 /* Navbar */
-
+/* Navbar Styles */
 .navbar {
     background-color: #fff;
     padding: 10px 0;
@@ -142,6 +147,35 @@ p.header-text {
 
 .navbar-link:hover {
     color: #12a31e;
+}
+
+/* Estilos para o formulário de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.search-form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+}
+
+.search-form input:focus {
+    border-color: #12a31e;
 }
 
 /* Banner */

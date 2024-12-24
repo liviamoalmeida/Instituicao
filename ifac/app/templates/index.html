@@ -109,39 +109,44 @@
 
         <nav class="navbar">
             <div class="navbar-container">
-                <a tabindex="0" href class="navbar-logo">
+                <a tabindex="0" href="/" class="navbar-logo">
                     <img
                         src="{{ url_for('static', filename='img/logoifac.png') }}"
                         alt="IFAC Logo" loading="lazy"
                         class="logo-img">
                 </a>
-
+        
                 <div class="navbar-links">
-                    <a
-                        href="https://www.ifac.edu.br/transparencia-e-prestacao-de-contas/institucional"
-                        class="navbar-link">IFAC</a>
+                    <a href="https://www.ifac.edu.br/transparencia-e-prestacao-de-contas/institucional"
+                       class="navbar-link">IFAC</a>
                     <a href="https://www.ifac.edu.br/processos-seletivos/"
-                        class="navbar-link">Processo Seletivo</a>
-                    <a
-                        href="https://www.ifac.edu.br/o-ifac/ensino/cursos/tipos-de-cursos"
-                        class="navbar-link">Cursos</a>
-                    <a href="https://www.ifac.edu.br/campi"
-                        class="navbar-link">Campi</a>
+                       class="navbar-link">Processo Seletivo</a>
+                    <a href="/cursos/"
+                       class="navbar-link">Cursos</a>
+                    <a href="/campi/"
+                       class="navbar-link">Campi</a>
                     <a href="https://www.ifac.edu.br/estudante"
-                        class="navbar-link">Estudante</a>
+                       class="navbar-link">Estudante</a>
                     <a href="https://www.ifac.edu.br/contato"
-                        class="navbar-link">Canais de Atendimento</a>
+                       class="navbar-link">Canais de Atendimento</a>
                     <a href="https://repositorio.ifac.edu.br/jspui/"
-                        class="navbar-link">Repositório</a>
+                       class="navbar-link">Repositório</a>
+                    
+                    <!-- Formulário de pesquisa -->
+                    <form method="POST" action="/pesquisar" class="search-form">
+                        <input type="text" name="query" placeholder="Pesquisar..." required>
+                        <button type="submit">🔍</button>
+                    </form>                    
                 </div>
             </div>
         </nav>
+        
 
         <section class="banner-section">
             <img src="{{ url_for('static', filename='img/banner.png') }}"
                 alt="Banner do IFAC" class="banner-img">
         </section>
-        
+
         <section class="section-container">
             <div class="container">
                 <div class="grid-row bottom-content">
